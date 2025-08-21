@@ -4,7 +4,7 @@ import { ArrowRight, Sparkles, Palette, Smartphone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import profileImage from '@/assets/zuber-profile.jpg';
+// Profile image will be loaded directly from uploaded file
 
 const Home = () => {
   useScrollAnimation();
@@ -46,7 +46,7 @@ const Home = () => {
                 {/* Main profile image */}
                 <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white/30 shadow-glow hover-glow transition-all duration-500 group-hover:scale-105">
                   <img 
-                    src={profileImage} 
+                    src="/lovable-uploads/52224df6-1135-4339-8226-f08a733c18f0.png" 
                     alt="Zuber Balganur - UI/UX Designer"
                     className="w-full h-full object-cover"
                   />

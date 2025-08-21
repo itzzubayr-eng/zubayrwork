@@ -8,9 +8,7 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const Home = () => {
   useScrollAnimation();
-
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       {/* Enhanced Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
         {/* Advanced Animated Background */}
@@ -29,9 +27,9 @@ const Home = () => {
           {/* Grid pattern overlay */}
           <div className="absolute inset-0 opacity-5">
             <div className="w-full h-full" style={{
-              backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
-              backgroundSize: '40px 40px'
-            }} />
+            backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+            backgroundSize: '40px 40px'
+          }} />
           </div>
         </div>
 
@@ -45,11 +43,7 @@ const Home = () => {
                 
                 {/* Main profile image */}
                 <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white/30 shadow-glow hover-glow transition-all duration-500 group-hover:scale-105">
-                  <img 
-                    src="/lovable-uploads/52224df6-1135-4339-8226-f08a733c18f0.png" 
-                    alt="Zuber Balganur - UI/UX Designer"
-                    className="w-full h-full object-cover"
-                  />
+                  <img src="/lovable-uploads/52224df6-1135-4339-8226-f08a733c18f0.png" alt="Zuber Balganur - UI/UX Designer" className="w-full h-full object-cover" />
                   {/* Overlay on hover */}
                   <div className="absolute inset-0 bg-gradient-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
@@ -73,7 +67,7 @@ const Home = () => {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
                 Hi, I'm{' '}
                 <span className="relative inline-block">
-                  <span className="gradient-text-hero">Zuber Balganur</span>
+                  <span className="gradient-text-hero text-amber-300">Zuber Balganur</span>
                   <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-primary rounded-full animate-pulse-soft" />
                 </span>
               </h1>
@@ -94,11 +88,7 @@ const Home = () => {
             {/* Enhanced CTA Section */}
             <div className="space-y-8">
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button 
-                  size="lg" 
-                  className="group bg-white text-primary hover:bg-white/90 shadow-medium hover-lift px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-glow"
-                  asChild
-                >
+                <Button size="lg" className="group bg-white text-primary hover:bg-white/90 shadow-medium hover-lift px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-glow" asChild>
                   <Link to="/portfolio">
                     <Sparkles className="mr-3 h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
                     View My Work 
@@ -106,12 +96,7 @@ const Home = () => {
                   </Link>
                 </Button>
                 
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="group border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 px-8 py-4 rounded-full font-semibold text-lg backdrop-blur-sm transition-all duration-300"
-                  asChild
-                >
+                <Button variant="outline" size="lg" className="group border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 px-8 py-4 rounded-full font-semibold text-lg backdrop-blur-sm transition-all duration-300" asChild>
                   <Link to="/contact">
                     Get in Touch
                     <div className="ml-2 w-2 h-2 bg-white rounded-full group-hover:animate-pulse" />
@@ -161,27 +146,19 @@ const Home = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Smartphone,
-                title: "Mobile App UI",
-                description: "Beautiful and intuitive mobile interfaces that users love to interact with."
-              },
-              {
-                icon: Palette,
-                title: "Website Design",
-                description: "Modern, responsive websites that convert visitors into customers."
-              },
-              {
-                icon: Sparkles,
-                title: "Dashboard Design",
-                description: "Clean, data-driven dashboards that make complex information simple."
-              }
-            ].map((service, index) => (
-              <Card 
-                key={index} 
-                className="p-6 bg-gradient-card border-0 hover-lift hover-glow animate-slide-up glass"
-              >
+            {[{
+            icon: Smartphone,
+            title: "Mobile App UI",
+            description: "Beautiful and intuitive mobile interfaces that users love to interact with."
+          }, {
+            icon: Palette,
+            title: "Website Design",
+            description: "Modern, responsive websites that convert visitors into customers."
+          }, {
+            icon: Sparkles,
+            title: "Dashboard Design",
+            description: "Clean, data-driven dashboards that make complex information simple."
+          }].map((service, index) => <Card key={index} className="p-6 bg-gradient-card border-0 hover-lift hover-glow animate-slide-up glass">
                 <div className="text-center">
                   <div className="w-16 h-16 mx-auto mb-4 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-medium">
                     <service.icon className="w-8 h-8 text-white" />
@@ -189,17 +166,11 @@ const Home = () => {
                   <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
                   <p className="text-muted-foreground">{service.description}</p>
                 </div>
-              </Card>
-            ))}
+              </Card>)}
           </div>
 
           <div className="text-center mt-12">
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="hover-glow"
-              asChild
-            >
+            <Button variant="outline" size="lg" className="hover-glow" asChild>
               <Link to="/services">
                 Explore All Services <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
@@ -207,8 +178,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;

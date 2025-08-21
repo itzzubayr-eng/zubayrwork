@@ -3,13 +3,13 @@ import { GraduationCap, Award, Heart, Code2 } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import profileImage from '@/assets/zuber-profile.jpg';
+// Profile image will be loaded directly from uploaded file
 
 const About = () => {
   useScrollAnimation();
   const skills = [
-    'UI/UX Design', 'Figma', 'Adobe XD', 'Sketch', 'Prototyping', 
-    'User Research', 'Wireframing', 'Design Systems', 'HTML/CSS', 'JavaScript'
+    'UI/UX Design', 'Figma', 'Sketch', 'Prototyping', 
+    'User Research', 'Wireframing', 'Design Systems'
   ];
 
   return (
@@ -30,9 +30,9 @@ const About = () => {
           <div className="animate-slide-up">
             <Card className="p-8 bg-gradient-card border-0 glass hover-glow">
               <div className="text-center">
-                <div className="w-48 h-48 mx-auto mb-6 rounded-3xl overflow-hidden shadow-strong">
+                <div className="w-48 h-48 mx-auto mb-6 rounded-2xl overflow-hidden shadow-strong">
                   <img 
-                    src={profileImage} 
+                    src="/lovable-uploads/5caecb35-5ad5-4c07-b14c-750ee74eda92.png" 
                     alt="Zuber Balganur"
                     className="w-full h-full object-cover"
                   />
@@ -41,14 +41,10 @@ const About = () => {
                 <h2 className="text-2xl font-bold mb-2">Zuber Balganur</h2>
                 <p className="text-primary font-medium mb-6">UI/UX Designer</p>
                 
-                <div className="grid grid-cols-2 gap-4 text-center">
-                  <div className="p-4 rounded-xl bg-primary/5">
+                <div className="text-center">
+                  <div className="p-4 rounded-xl bg-primary/5 inline-block">
                     <div className="text-2xl font-bold text-primary">2025</div>
                     <div className="text-sm text-muted-foreground">Graduate</div>
-                  </div>
-                  <div className="p-4 rounded-xl bg-accent/5">
-                    <div className="text-2xl font-bold text-accent">10+</div>
-                    <div className="text-sm text-muted-foreground">Projects</div>
                   </div>
                 </div>
               </div>

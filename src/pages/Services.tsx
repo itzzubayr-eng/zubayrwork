@@ -19,7 +19,6 @@ const Services = () => {
         "Responsive layouts",
         "Design system creation"
       ],
-      price: "Starting at ₹15,000",
       popular: false,
       gradient: "from-blue-500 to-purple-600"
     },
@@ -34,7 +33,6 @@ const Services = () => {
         "Brand integration",
         "SEO-friendly layouts"
       ],
-      price: "Starting at ₹20,000",
       popular: true,
       gradient: "from-green-500 to-teal-600"
     },
@@ -49,7 +47,6 @@ const Services = () => {
         "Custom chart designs",
         "User role management UI"
       ],
-      price: "Starting at ₹25,000",
       popular: false,
       gradient: "from-orange-500 to-red-600"
     },
@@ -64,7 +61,6 @@ const Services = () => {
         "Typography systems",
         "Icon sets"
       ],
-      price: "Starting at ₹30,000",
       popular: false,
       gradient: "from-purple-500 to-pink-600"
     },
@@ -79,24 +75,8 @@ const Services = () => {
         "Persona development",
         "Competitive analysis"
       ],
-      price: "Starting at ₹12,000",
       popular: false,
       gradient: "from-cyan-500 to-blue-600"
-    },
-    {
-      icon: Zap,
-      title: "UI/UX Consultation",
-      description: "Expert advice on improving your existing designs or planning new projects. Get actionable insights and strategic recommendations.",
-      features: [
-        "Design audits",
-        "UX strategy planning",
-        "Design workshops",
-        "Team training",
-        "Best practices guidance"
-      ],
-      price: "₹2,000/hour",
-      popular: false,
-      gradient: "from-indigo-500 to-purple-600"
     }
   ];
 
@@ -176,9 +156,8 @@ const Services = () => {
                 ))}
               </ul>
 
-              {/* Price */}
+              {/* Call to Action */}
               <div className="mt-auto">
-                <div className="text-2xl font-bold text-primary mb-4">{service.price}</div>
                 <Button 
                   className={`w-full bg-gradient-to-r ${service.gradient} text-white hover:shadow-glow transition-all duration-300`}
                 >

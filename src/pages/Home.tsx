@@ -35,48 +35,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Floating Info Cards */}
-        <div className="absolute inset-0 pointer-events-none">
-          {/* Experience Card */}
-          <div className="absolute top-32 left-8 lg:left-16 animate-float glass-card p-4 max-w-48 pointer-events-auto group hover:scale-105 transition-transform duration-300">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-white" />
-              </div>
-              <div>
-                <div className="text-white font-semibold">2+ Years</div>
-                <div className="text-white/70 text-sm">Learning Design</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Projects Card */}
-          <div className="absolute top-40 right-8 lg:right-16 animate-pulse-soft glass-card p-4 max-w-48 pointer-events-auto group hover:scale-105 transition-transform duration-300">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-secondary rounded-lg flex items-center justify-center">
-                <Palette className="w-5 h-5 text-white" />
-              </div>
-              <div>
-                <div className="text-white font-semibold">10+ Projects</div>
-                <div className="text-white/70 text-sm">Completed</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Skills Card */}
-          <div className="absolute bottom-32 left-8 lg:left-16 animate-float glass-card p-4 max-w-48 pointer-events-auto group hover:scale-105 transition-transform duration-300">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
-                <Smartphone className="w-5 h-5 text-white" />
-              </div>
-              <div>
-                <div className="text-white font-semibold">Figma Expert</div>
-                <div className="text-white/70 text-sm">Primary Tool</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="animate-slide-up in-view">
             {/* Enhanced Profile Section */}
